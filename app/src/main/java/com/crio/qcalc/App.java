@@ -4,11 +4,14 @@
 package com.crio.qcalc;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+    // public String getGreeting() {
+    //     return "Hello World!";
+    // }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        System.out.println("Starting QCalc..");
+        StandardCalculator calc = new StandardCalculator();
+        calc.add(4,5);
+        System.out.println(calc.getResult());
     }
 }
