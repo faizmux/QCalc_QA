@@ -54,22 +54,22 @@ public class StandardCalculatorTest {
         Assertions.assertEquals(-10.5, actualResult);
     }
 
+
     @Test
-    @DisplayName("Test Multiplication of Two Doubles")
-    void testMultiplicationOperationForDoubles() {
-        standardCalculator.multiply(10.0, 20.5);
+    @DisplayName("Test Addition of Two Integers")
+    void testAdditionOperation(){
+        standardCalculator.add(1,1);
         double actualResult = standardCalculator.getResult();
-        Assertions.assertEquals(205, actualResult);
+        Assertions.assertEquals(2, actualResult);
     }
 
     @Test
-    @DisplayName("Test Divison of Two Doubles")
-    void testDivisonOperationForDoubles() {
-        standardCalculator.divide(20.5, 10.0);
+    @DisplayName("Test Substraction of Two Integers")
+    void testSubtractionOperation(){
+        standardCalculator.subtract(1,1);
         double actualResult = standardCalculator.getResult();
-        Assertions.assertEquals(2.05, actualResult);
+        Assertions.assertEquals(0, actualResult);
     }
-
 
 
 }
